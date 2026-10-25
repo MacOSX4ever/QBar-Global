@@ -57,16 +57,19 @@ local defConfig = {
 -- These items are not marked as being quest items, but we want to include them anyway
 
 local qItems = {
+	-- Classic
 	5456,	-- Divining Scroll (item has no Use: text, even though you can use it)
 	11582,	-- Fel Salve
-	11914,  -- Cursed Ooze Jar
+	11914,	-- Cursed Ooze Jar
 	11948,	-- Tainted Ooze Jar
 	12922,	-- Empty Canteen
 	21576,	-- Lunar Festival - Red Rocket Cluster (Achievement The Rocket's Red Glare)
 	21711,	-- Lunar Festival - Lunar Festival Invitation
 	21713,	-- Lunar Festival - Elune's Candle
-	21746,  -- Lunar Festival - Lucky Red Envelope
+	21746,	-- Lunar Festival - Lucky Red Envelope
 	21747,	-- Lunar Festival - Festival Firecracker (Achievement Frenzied Firecracker)
+
+	-- The Burning Crusade
 	23361,	-- Cleansing Vial
 	23792,	-- Tree Disguise Kit
 	23818,	-- Stillpine Furbolg Language Primer
@@ -81,88 +84,201 @@ local qItems = {
 	25853,	-- Pack of Incendiary Bombs (Old Hillsbrad)
 	28038,	-- Seaforium PU-36 Explosive Nether Modulator
 	28132,	-- Area 52 Special
+
+	-- Wrath of the Lich King
 	32971,	-- Hallow's End - Water Bucket
 	33096,	-- Brew Fest - Complimentary Brewfest Sampler
 	33634,	-- Orehammer's Precision Bombs, quest from Howling Fjord
-	34191,  -- Handful of Snowflakes (Winter Veil)
+	34191,	-- Handful of Snowflakes (Winter Veil)
+	44697,	-- Bottle of Wildfire
 	45067,	-- Egg Basket -- Az: offhand item, but I wanted it on my bar for a hotkey
-	46069,  -- Argent Tournament - Alliance Lance
-	46070,  -- Argent Tournament - Horde Lance
-	46106,  -- Argent Tournament - Argent Lance
+	46069,	-- Argent Tournament - Alliance Lance
+	46070,	-- Argent Tournament - Horde Lance
+	46094,	-- Bucket of Water
+	46106,	-- Argent Tournament - Argent Lance
 	46861,	-- Bouquet of Orange Marigolds (Day of the Dead)
 	49278,	-- Goblin Rocket Pack (ICC - Lootship)
-	52716 , -- Twilight Firelance
+
+	-- Cataclysm
+	52682,	-- Lycanthoth the Corruptor
+	52716,	-- Twilight Firelance
+	53052,	-- Totem Modification
+	53107,	-- Flamebreaker
+	54214,	-- Totem Modification
+	54216,	-- Totem Modification
+	54217,	-- Totem Modification
+	54463,	-- The Return of Baron Geddon
+	54466,	-- Rundown
+	54841,	-- Odor Coater
+	55152,	-- Warsong Flame Thrower
+	55220,	-- DUN-dun-DUN-dun-DUN-dun
+	55806,	-- Decisions, Decisions
+	56168,	-- Thal'darah's Hippogryph Whistle
+	56576,	-- Wake of Destruction
 	56909,	-- Earthen Ring Unbinding Totem (Cata event)
-	60501, 	-- Stormstone, Deepholm Quest
-	72056, --  Darkmoon Faire - Plump Frogs
-	78910,  -- Darkmoon Faire - Sack o' Tokens
-	91086,  -- Darkmoon Faire - Darkmoon Pet Supplies
-	92794,  -- Darkmoon Faire - Ride Ticket Book
-	93724,  -- Darkmoon Faire - Darkmoon Game Prize
-	104272, -- Siege of Orgrimmar - Celestial Treasure Box
-	116062, -- Darkmoon Faire - Greater Darkmoon Pet Supplies
-	116072, -- Blackened Iron Key - WoD
-	116762, -- Feast of Winter Veil - Stolen Present
-	124670, -- Darkmoon Faire - Sealed Darkmoon Crate
-	127141, -- Bloated Thresher
-	202163, -- Rumble Crossover Event - Rumble Prize Box
-	208210, -- Celebration Package
-	208211, -- Anniversary Gift
-	210743, -- Love is in the Air - Borrowed Camera
+	60501,	-- Stormstone, Deepholm Quest
+	62794,	-- Angered Spirits
 
--- Shadowland Item Updates
+	-- Mists of Pandaria
+	72056,	-- Darkmoon Faire - Plump Frogs
+	75208,	-- A Lesson in Bravery
+	78910,	-- Darkmoon Faire - Sack o' Tokens
+	79104,	-- Learn and Grow III: Tending Crops
+	79885,	-- Simian Sabotage
+	80071,	-- Last Piece of the Puzzle
+	80074,	-- Jaded Heart
+	80302,	-- Learn and Grow II: Tilling and Planting
+	80599,	-- Goblin Fishing Bomb
+	85230,	-- Sea Monarch Chunks
+	85869,	-- Mazu's Breath
+	86465,	-- Old Sheepskin
+	86511,	-- Emergency Response
+	91086,	-- Darkmoon Faire - Darkmoon Pet Supplies
+	92794,	-- Darkmoon Faire - Ride Ticket Book
+	93724,	-- Darkmoon Faire - Darkmoon Game Prize
+	104272,	-- Siege of Orgrimmar - Celestial Treasure Box
 
-	141344, -- Tribute of the Broken Isles
-	146948, -- Tribute of the Broken Isles
-	150924, -- Greater Tribute of the Broken Isles
-	171210, -- Satchel of Nature's Bounty
-	180008, -- Resonating Anima Core
-	180170, -- Pulsing Animacone
-	180974, -- Novices Satchel
-	180981, -- Novices Large Satchel
-	180985, -- Novices Stuffed Satchel
-	180989, -- Novices Overflowing Satchel
-	181372, -- Tribute of the Ascended
-	181475, -- Bounty of the Grove Wardens
-	181476, -- Tribute of the Wild Hunt
-	181556, -- Tribute of the Court
-	181732, -- Tribute of the Ambitious
-	181733, -- Tribute of the Duty-Bound
-	181741, -- Tribute of the Paragon
-	183702, -- Natures Splendor
-	
---Dragonflight
+	-- Warlords of Draenor
+	110492,	-- Flames of the Earth
+	111908,	-- In Need of a Hero
+	112099,	-- Behind the Veil
+	112332,	-- Slumberblooms
+	114926,	-- An act of Kindness
+	115533,	-- Curing With Force
+	116062,	-- Darkmoon Faire - Greater Darkmoon Pet Supplies
+	116072,	-- Blackened Iron Key - WoD
+	116762,	-- Feast of Winter Veil - Stolen Present
+	118330,	-- Pile of Weapons
+	122463,	-- Garrison Campaign: In the Shadows
+	124670,	-- Darkmoon Faire - Sealed Darkmoon Crate
+	127141,	-- Bloated Thresher
 
-	191160, -- Sweetsuckle Bloom
-	191928, -- Brena's Totem, Echoes of the Fallen
-	192465, -- Wulferd's Award-Winning Camera
-	193201, -- Key Framing
-	198863, -- Small Dragon Expedition Supply Pack
-	198866, -- Small Iskaaran Supply Pack
-	198868, -- Small Valdrakken Accord Supply
-	200069, -- Obsidian Cache
-	200070, -- Obsidian Strongbox
-	200073, -- Valdrakken Treasures
-	200300, -- Sack of Looted Treasures
-	200468, -- Grand Hunt Spoils
-	201754, -- Obsidian Forgemaster's Cache
-	202252, -- Vault, Recipe Rat
-	205982, -- Lost Dig Map
-	205984, -- Bartered Dig Map
-	210180, -- Emerald Flightstone
-	211474, -- Shadowblind Grouper
-	212608, -- Duck Potion
-	
-	
---War Within
-	
-	219191, -- Hastily Scrawled Notes
-	219192, -- Comprehensibly Organized Idea
-	221268, -- Pouch of Weathered Harbinger Crests
-	221373, -- Satchel of Carved Harbinger Crests
-	226293, -- Dornogal Spectacles
-	
-};
+	-- Legion
+	131931,	-- Trail of Echoes
+	136386,	-- Bloodatone
+	136414,	-- When Dreams Become Nightmares
+	141344,	-- Tribute of the Broken Isles
+	146948,	-- Tribute of the Broken Isles
+	150924,	-- Greater Tribute of the Broken Isles
+
+	-- Battle for Azeroth
+	151849,	-- Scroll of Inferno
+	153357,	-- Battlehorn of the Mountain
+	154878,	-- Rodrigo's Birdseed Biscuit
+	156710,	-- Liquid Fire Flask
+	156828,	-- Frost Potion
+	158064,	-- Greater Control Charm
+	159782,	-- Milk Pail
+	160429,	-- Rope and Hook
+	161247,	-- Marshal's Regalia
+	162450,	-- Portal Orb
+	163196,	-- Invisibility Flask
+	165723,	-- Embiggifier Core
+	165762,	-- Embiggifier Core
+	167231,	-- Delormis Synchronous Thread
+	168482,	-- Benthic Sealant
+
+	-- Shadowlands
+	171210,	-- Satchel of Nature's Bounty
+	178051,	-- Re-Sizer v9.0.1
+	180008,	-- Resonating Anima Core
+	180170,	-- Pulsing Animacone
+	180974,	-- Novices Satchel
+	180981,	-- Novices Large Satchel
+	180985,	-- Novices Stuffed Satchel
+	180989,	-- Novices Overflowing Satchel
+	181372,	-- Tribute of the Ascended
+	181475,	-- Bounty of the Grove Wardens
+	181476,	-- Tribute of the Wild Hunt
+	181556,	-- Tribute of the Court
+	181732,	-- Tribute of the Ambitious
+	181733,	-- Tribute of the Duty-Bound
+	181741,	-- Tribute of the Paragon
+	183702,	-- Natures Splendor
+
+	-- Dragonflight
+	191160,	-- Sweetsuckle Bloom
+	191928,	-- Brena's Totem, Echoes of the Fallen
+	192465,	-- Wulferd's Award-Winning Camera
+	193201,	-- Key Framing
+	193918,	-- Hornswoggled!
+	197805,	-- Suspicious Persons Scanner
+	198855,	-- Throw Net
+	198863,	-- Small Dragon Expedition Supply Pack
+	198866,	-- Small Iskaaran Supply Pack
+	198868,	-- Small Valdrakken Accord Supply
+	200069,	-- Obsidian Cache
+	200070,	-- Obsidian Strongbox
+	200073,	-- Valdrakken Treasures
+	200300,	-- Sack of Looted Treasures
+	200468,	-- Grand Hunt Spoils
+	200747,	-- Zikkori's Water Siphoning Device
+	201754,	-- Obsidian Forgemaster's Cache
+	202163,	-- Rumble Crossover Event - Rumble Prize Box
+	202247,	-- A Practicle Test
+	202252,	-- Vault, Recipe Rat
+	202714,	-- M.U.S.T.
+	203013,	-- Sniffen 'em Out!
+	203708,	-- Conch Whistle
+	204343,	-- Helpful Harvest
+	205982,	-- Lost Dig Map
+	205984,	-- Bartered Dig Map
+	206353,	-- Sentinel's Whistle
+	206586,	-- Epoch-Extractor
+	207084,	-- Auedry's Marker Pistol
+	208210,	-- Celebration Package
+	208211,	-- Anniversary Gift
+	208947,	-- Enchanted Watering Can
+	210180,	-- Emerald Flightstone
+	210227,	-- Fickle Judgement
+	210431,	-- Crushing the Crown
+	210558,	-- Horn of Honking
+	210743,	-- Love is in the Air - Borrowed Camera
+	210778,	-- Surveying the Cliffside
+	211208,	-- O.D.I.E.S. Remote Control
+	211302,	-- Slumber Fruit
+	211474,	-- Shadowblind Grouper
+	212608,	-- Duck Potion
+
+	-- The War Within
+	211535,	-- Scroll of Shattering
+	211945,	-- Torch of the Holy Flame
+	215142,	-- Freydrin's Shillelagh
+	215158,	-- Freydrin's Shillelagh
+	215467,	-- Dirt-Cracker Pick
+	217309,	-- Arathi Warhorn
+	219191,	-- Hastily Scrawled Notes
+	219192,	-- Comprehensibly Organized Idea
+	219469,	-- Fog Beast Tracker
+	220483,	-- Tuning Wand
+	221268,	-- Pouch of Weathered Harbinger Crests
+	221373,	-- Satchel of Carved Harbinger Crests
+	223220,	-- Kaheti All-Purpose Cleaner
+	224104,	-- Flashfire Thurible
+	226157,	-- Semi-Delux Noggenfogger Elixirs
+	226293,	-- Dornogal Spectacles
+	228988,	-- Rock 'n Stone Revival
+	229420,	-- Anima Orb
+	230729,	-- Appropriated-Azerothian-Camera
+	230730,	-- Nether Tuner
+	231900,	-- Sample Potion
+	233028,	-- Flamethrower
+	235384,	-- Anima Vacuum
+	235898,	-- Containment Trap
+	236406,	-- Appropriated S.E.L.F.I.E. Camera
+	236679,	-- Essence Scanner
+	237356,	-- Vermin Attuned Optic-Visualizer
+	237811,	-- Faol's Benediction
+	238903,	-- Camera
+
+	-- Midnight
+	248920,	-- Nightwatch Mask
+	249779,	-- Discordant Tune
+	250440,	-- Recruitment Fliers
+	251284,	-- Anomaly Inverter
+	270342,	-- Interlocked Twilight Runes
+	271094,	-- Lady Darkglen's Device
+}
 
 --------------------------------------------------------------------------------------------------------
 --                                                Main                                                --

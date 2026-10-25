@@ -1,3 +1,8 @@
+QBar-Global Changes | 2026 Oct 25
+---------------------------------
+- Added many more internal quest items and cleqaned up their softing by expansion.
+* Thanks to Dephotian for all of the new item numbers
+
 QBar-Global Changes | 2026 Apr 25
 ---------------------------------
 - Renamed addon to QBar-Global to avoid conflict with the abandoned original QBar.

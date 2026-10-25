@@ -1,6 +1,6 @@
 ## Interface: 120005
-## Version: 25.02.00 - Fan Update by ßellena, Blade's Edge
-## Title: QBar Global |cff00aa00DF v25.02.00|
+## Version: 25.02.01 - Fan Update by ßellena, Blade's Edge
+## Title: QBar Global |cff00aa00DF v25.02.01|
 ## Author-FanUpdate: ßellena-Blade's Edge
 ## Author: Aezay (Earthen Ring EU) *Abandoned*
 ## IconTexture: Interface\AddOns\QBar-Global\QBarIcon
